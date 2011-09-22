@@ -32,35 +32,39 @@
 ><ul
   ><li
     ><a href="#concatenate-strings"
-      >Concatenate strings</a
+      >Concatenate Strings</a
       ><ul
       ><li
-	><a href="#postgresql"
-	  >PostgreSQL</a
+	><a href="#go"
+	  >Go</a
 	  ></li
 	><li
 	><a href="#mysql"
 	  >MySQL</a
 	  ></li
 	><li
-	><a href="#ruby"
-	  >Ruby</a
-	  ></li
-	><li
 	><a href="#php"
 	  >PHP</a
 	  ></li
 	><li
-	><a href="#go"
-	  >Go</a
+	><a href="#postgresql"
+	  >PostgreSQL</a
+	  ></li
+	><li
+	><a href="#ruby"
+	  >Ruby</a
 	  ></li
 	></ul
       ></li
     ><li
     ><a href="#convert-string-to-integer"
-      >Convert string to integer</a
+      >Convert String To Integer</a
       ><ul
       ><li
+	><a href="#php-1"
+	  >PHP</a
+	  ></li
+	><li
 	><a href="#postgresql-1"
 	  >PostgreSQL</a
 	  ></li
@@ -68,17 +72,17 @@
 	><a href="#ruby-1"
 	  >Ruby</a
 	  ></li
-	><li
-	><a href="#php-1"
-	  >PHP</a
-	  ></li
 	></ul
       ></li
     ><li
     ><a href="#print-string"
-      >Print string</a
+      >Print String</a
       ><ul
       ><li
+	><a href="#go-1"
+	  >Go</a
+	  ></li
+	><li
 	><a href="#php-2"
 	  >PHP</a
 	  ></li
@@ -90,10 +94,6 @@
 	><a href="#sql"
 	  >SQL</a
 	  ></li
-	><li
-	><a href="#go-1"
-	  >Go</a
-	  ></li
 	></ul
       ></li
     ></ul
@@ -102,33 +102,17 @@
 <div id="concatenate-strings"
 ><h2
   ><a href="#TOC"
-    >Concatenate strings</a
+    >Concatenate Strings</a
     ></h2
-  ><div id="postgresql"
+  ><div id="go"
   ><h3
     ><a href="#TOC"
-      >PostgreSQL</a
+      >Go</a
       ></h3
-    ><pre class="sourceCode sql"
+    ><pre class="go"
     ><code
-      ><span class="Keyword"
-	>SELECT</span
-	><span class="Normal NormalText"
-	> </span
-	><span class="String"
-	>'one'</span
-	><span class="Normal NormalText"
-	> </span
-	><span class="Normal Operator"
-	>||</span
-	><span class="Normal NormalText"
-	> </span
-	><span class="String"
-	>'two'</span
-	><span class="Normal NormalText"
-	>;</span
-	><br
-	 /></code
+      >string := 'one' + 'two'
+</code
       ></pre
     ></div
   ><div id="mysql"
@@ -154,6 +138,46 @@
 	>'two'</span
 	><span class="Normal NormalText"
 	>);</span
+	><br
+	 /></code
+      ></pre
+    ></div
+  ><div id="php"
+  ><h3
+    ><a href="#TOC"
+      >PHP</a
+      ></h3
+    ><pre class="sourceCode php"
+    ><code
+      ><span class="Normal NormalText"
+	>$string = 'one' . 'two';</span
+	><br
+	 /></code
+      ></pre
+    ></div
+  ><div id="postgresql"
+  ><h3
+    ><a href="#TOC"
+      >PostgreSQL</a
+      ></h3
+    ><pre class="sourceCode sql"
+    ><code
+      ><span class="Keyword"
+	>SELECT</span
+	><span class="Normal NormalText"
+	> </span
+	><span class="String"
+	>'one'</span
+	><span class="Normal NormalText"
+	> </span
+	><span class="Normal Operator"
+	>||</span
+	><span class="Normal NormalText"
+	> </span
+	><span class="String"
+	>'two'</span
+	><span class="Normal NormalText"
+	>;</span
 	><br
 	 /></code
       ></pre
@@ -185,7 +209,13 @@
 	 /></code
       ></pre
     ></div
-  ><div id="php"
+  ></div
+><div id="convert-string-to-integer"
+><h2
+  ><a href="#TOC"
+    >Convert String To Integer</a
+    ></h2
+  ><div id="php-1"
   ><h3
     ><a href="#TOC"
       >PHP</a
@@ -193,28 +223,11 @@
     ><pre class="sourceCode php"
     ><code
       ><span class="Normal NormalText"
-	>$string = 'one' . 'two';</span
+	>$int = (int)'10';</span
 	><br
 	 /></code
       ></pre
     ></div
-  ><div id="go"
-  ><h3
-    ><a href="#TOC"
-      >Go</a
-      ></h3
-    ><pre class="go"
-    ><code
-      >string := 'one' + 'two'
-</code
-      ></pre
-    ></div
-  ></div
-><div id="convert-string-to-integer"
-><h2
-  ><a href="#TOC"
-    >Convert string to integer</a
-    ></h2
   ><div id="postgresql-1"
   ><h3
     ><a href="#TOC"
@@ -259,25 +272,28 @@
 	 /></code
       ></pre
     ></div
-  ><div id="php-1"
-  ><h3
-    ><a href="#TOC"
-      >PHP</a
-      ></h3
-    ><pre class="sourceCode php"
-    ><code
-      ><span class="Normal NormalText"
-	>$int = (int)'10';</span
-	><br
-	 /></code
-      ></pre
-    ></div
   ></div
 ><div id="print-string"
 ><h2
   ><a href="#TOC"
-    >Print string</a
+    >Print String</a
     ></h2
+  ><div id="go-1"
+  ><h3
+    ><a href="#TOC"
+      >Go</a
+      ></h3
+    ><pre class="go"
+    ><code
+      >import fmt
+
+.
+.
+
+fmt.Print('string')
+</code
+      ></pre
+    ></div
   ><div id="php-2"
   ><h3
     ><a href="#TOC"
@@ -285,20 +301,52 @@
       ></h3
     ><pre class="sourceCode php"
     ><code
-      ><span class="Normal NormalText"
-	>echo 'string';</span
+      ><span class="Keyword"
+	>&lt;?php</span
+	><span class="Normal PHPText"
+	> </span
 	><br
-	 /><span class="Normal NormalText"
+	 /><span class="Function"
+	>echo</span
+	><span class="Normal PHPText"
+	> </span
+	><span class="String"
+	>'string'</span
+	><span class="Others Other"
+	>;</span
+	><br
+	 /><span class="Comment"
 	>//or</span
 	><br
-	 /><span class="Normal NormalText"
-	>print 'string';</span
+	 /><span class="Function"
+	>print</span
+	><span class="Normal PHPText"
+	> </span
+	><span class="String"
+	>'string'</span
+	><span class="Others Other"
+	>;</span
 	><br
-	 /><span class="Normal NormalText"
+	 /><span class="Comment"
 	>//or</span
 	><br
-	 /><span class="Normal NormalText"
-	>printf('%s', 'string');</span
+	 /><span class="Function"
+	>printf</span
+	><span class="Others Other"
+	>(</span
+	><span class="String"
+	>'%s'</span
+	><span class="Others Other"
+	>,</span
+	><span class="Normal PHPText"
+	> </span
+	><span class="String"
+	>'string'</span
+	><span class="Others Other"
+	>);</span
+	><br
+	 /><span class="Keyword"
+	>?&gt;</span
 	><br
 	 /></code
       ></pre
@@ -337,24 +385,6 @@
 	>;</span
 	><br
 	 /></code
-      ></pre
-    ></div
-  ><div id="go-1"
-  ><h3
-    ><a href="#TOC"
-      >Go</a
-      ></h3
-    ><pre class="go"
-    ><code
-      ><br
-	 />import fmt
-
-.
-.
-
-fmt.Print('string')
-
-</code
       ></pre
     ></div
   ></div

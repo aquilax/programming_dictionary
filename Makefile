@@ -5,7 +5,7 @@ FILES_RECEPTI = $(wildcard ./recepti/*.markdown)
 FILES_ALL = $(FILES_MAIN) $(FILES_UPRAJNENIA) $(FILES_RECEPTI)
 .PHONY: clean spell
 
-all:	html epub
+all:	generate html epub
 
 html: *.markdown style.css Makefile
 	pandoc -s --css=style.css --toc -o $(BUILDDIR)/index.html $(FILES_ALL)
@@ -13,6 +13,9 @@ html: *.markdown style.css Makefile
 
 epub: *.markdown style.css Makefile
 	pandoc -t epub --epub-metadata=metadata.xml -s --epub-stylesheet=style.css --toc -o $(BUILDDIR)/book.epub $(FILES_ALL)
+
+generate:
+	php bin/cook.php recipes/ > index.markdown
 
 clean:
 	rm -f $(BUILDDIR)/*.html

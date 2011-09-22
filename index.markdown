@@ -1,4 +1,22 @@
-## Concatenate strings
+## Concatenate Strings
+
+### Go
+
+~~~ {.go}
+string := 'one' + 'two'
+~~~
+
+### MySQL
+
+~~~ {.sql}
+SELECT CONCAT('one', 'two');
+~~~
+
+### PHP
+
+~~~ {.php}
+$string = 'one' . 'two';
+~~~
 
 ### PostgreSQL
 
@@ -6,75 +24,66 @@
 SELECT 'one' || 'two';
 ~~~
 
-### MySQL
-~~~ {.sql}
-SELECT CONCAT('one', 'two');
-~~~
-
 ### Ruby
+
 ~~~ {.ruby}
 string = 'one' + 'two'
 ~~~
 
+## Convert String To Integer
+
 ### PHP
+
 ~~~ {.php}
-$string = 'one' . 'two';
+$int = (int)'10';
 ~~~
-
-### Go
-~~~ {.go}
-string := 'one' + 'two'
-~~~
-
-
-## Convert string to integer
 
 ### PostgreSQL
-~~~{.sql}
+
+~~~ {.sql}
 SELECT '10'::integer;
 ~~~
 
 ### Ruby
-~~~{.ruby}
+
+~~~ {.ruby}
 int = '10'.to_i
 ~~~
 
-### PHP
-~~~{.php}
-$int = (int)'10';
-~~~
-
-## Print string
-
-### PHP
-~~~{.php}
-echo 'string';
-//or
-print 'string';
-//or
-printf('%s', 'string');
-~~~
-
-### Ruby
-
-~~~{.ruby}
-puts 'string'
-~~~
-
-### SQL
-
-~~~{.sql}
-SELECT 'string';
-~~~
+## Print String
 
 ### Go
-~~~{.go}
 
+~~~ {.go}
 import fmt
 
 .
 .
 
 fmt.Print('string')
-
 ~~~
+
+### PHP
+
+~~~ {.php}
+<?php 
+echo 'string';
+//or
+print 'string';
+//or
+printf('%s', 'string');
+?>
+~~~
+
+### Ruby
+
+~~~ {.ruby}
+puts 'string'
+~~~
+
+### SQL
+
+~~~ {.sql}
+SELECT 'string';
+~~~
+
