@@ -1,0 +1,1 @@
+SELECT MOD(5, 2);

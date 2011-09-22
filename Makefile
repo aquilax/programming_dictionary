@@ -5,7 +5,7 @@ FILES_RECEPTI = $(wildcard ./recepti/*.markdown)
 FILES_ALL = $(FILES_MAIN) $(FILES_UPRAJNENIA) $(FILES_RECEPTI)
 .PHONY: clean spell
 
-all:	generate html epub
+all:	generate html 
 
 html: *.markdown style.css Makefile
 	pandoc -s --css=style.css --toc -o $(BUILDDIR)/index.html $(FILES_ALL)
