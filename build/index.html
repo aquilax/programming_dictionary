@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="date" content="" />
+  <style type="text/css">
+    table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode, table.sourceCode pre { margin: 0; padding: 0; border: 0; vertical-align: baseline; border: none; }
+    td.lineNumbers { border-right: 1px solid #AAAAAA; text-align: right; color: #AAAAAA; padding-right: 5px; padding-left: 5px; }
+    td.sourceCode { padding-left: 5px; }
+    pre.sourceCode { }
+    pre.sourceCode span.Normal { }
+    pre.sourceCode span.Keyword { color: #007020; font-weight: bold; } 
+    pre.sourceCode span.DataType { color: #902000; }
+    pre.sourceCode span.DecVal { color: #40a070; }
+    pre.sourceCode span.BaseN { color: #40a070; }
+    pre.sourceCode span.Float { color: #40a070; }
+    pre.sourceCode span.Char { color: #4070a0; }
+    pre.sourceCode span.String { color: #4070a0; }
+    pre.sourceCode span.Comment { color: #60a0b0; font-style: italic; }
+    pre.sourceCode span.Others { color: #007020; }
+    pre.sourceCode span.Alert { color: red; font-weight: bold; }
+    pre.sourceCode span.Function { color: #06287e; }
+    pre.sourceCode span.RegionMarker { }
+    pre.sourceCode span.Error { color: red; font-weight: bold; }
+  </style>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<div id="TOC"
+><ul
+  ><li
+    ><a href="#concatenate-strings"
+      >Concatenate strings</a
+      ><ul
+      ><li
+	><a href="#postgresql"
+	  >PostgreSQL</a
+	  ></li
+	><li
+	><a href="#mysql"
+	  >MySQL</a
+	  ></li
+	><li
+	><a href="#ruby"
+	  >Ruby</a
+	  ></li
+	><li
+	><a href="#php"
+	  >PHP</a
+	  ></li
+	><li
+	><a href="#go"
+	  >Go</a
+	  ></li
+	></ul
+      ></li
+    ><li
+    ><a href="#convert-string-to-integer"
+      >Convert string to integer</a
+      ><ul
+      ><li
+	><a href="#postgresql-1"
+	  >PostgreSQL</a
+	  ></li
+	><li
+	><a href="#ruby-1"
+	  >Ruby</a
+	  ></li
+	><li
+	><a href="#php-1"
+	  >PHP</a
+	  ></li
+	></ul
+      ></li
+    ></ul
+  ></div
+>
+<div id="concatenate-strings"
+><h2
+  ><a href="#TOC"
+    >Concatenate strings</a
+    ></h2
+  ><div id="postgresql"
+  ><h3
+    ><a href="#TOC"
+      >PostgreSQL</a
+      ></h3
+    ><pre class="sourceCode sql"
+    ><code
+      ><span class="Keyword"
+	>SELECT</span
+	><span class="Normal NormalText"
+	> </span
+	><span class="String"
+	>'one'</span
+	><span class="Normal NormalText"
+	> </span
+	><span class="Normal Operator"
+	>||</span
+	><span class="Normal NormalText"
+	> </span
+	><span class="String"
+	>'two'</span
+	><span class="Normal NormalText"
+	>;</span
+	><br
+	 /></code
+      ></pre
+    ></div
+  ><div id="mysql"
+  ><h3
+    ><a href="#TOC"
+      >MySQL</a
+      ></h3
+    ><pre class="sourceCode sql"
+    ><code
+      ><span class="Keyword"
+	>SELECT</span
+	><span class="Normal NormalText"
+	> </span
+	><span class="Function"
+	>CONCAT</span
+	><span class="Normal NormalText"
+	>(</span
+	><span class="String"
+	>'one'</span
+	><span class="Normal NormalText"
+	>, </span
+	><span class="String"
+	>'two'</span
+	><span class="Normal NormalText"
+	>);</span
+	><br
+	 /></code
+      ></pre
+    ></div
+  ><div id="ruby"
+  ><h3
+    ><a href="#TOC"
+      >Ruby</a
+      ></h3
+    ><pre class="sourceCode ruby"
+    ><code
+      ><span class="Normal NormalText"
+	>string </span
+	><span class="Char Operator"
+	>=</span
+	><span class="Normal NormalText"
+	> </span
+	><span class="String RawString"
+	>'one'</span
+	><span class="Normal NormalText"
+	> </span
+	><span class="Char Operator"
+	>+</span
+	><span class="Normal NormalText"
+	> </span
+	><span class="String RawString"
+	>'two'</span
+	><br
+	 /></code
+      ></pre
+    ></div
+  ><div id="php"
+  ><h3
+    ><a href="#TOC"
+      >PHP</a
+      ></h3
+    ><pre class="sourceCode php"
+    ><code
+      ><span class="Normal NormalText"
+	>$string = 'one' . 'two';</span
+	><br
+	 /></code
+      ></pre
+    ></div
+  ><div id="go"
+  ><h3
+    ><a href="#TOC"
+      >Go</a
+      ></h3
+    ><pre class="go"
+    ><code
+      >string := 'one' + 'two'
+</code
+      ></pre
+    ></div
+  ></div
+><div id="convert-string-to-integer"
+><h2
+  ><a href="#TOC"
+    >Convert string to integer</a
+    ></h2
+  ><div id="postgresql-1"
+  ><h3
+    ><a href="#TOC"
+      >PostgreSQL</a
+      ></h3
+    ><pre class="sourceCode sql"
+    ><code
+      ><span class="Keyword"
+	>SELECT</span
+	><span class="Normal NormalText"
+	> </span
+	><span class="String"
+	>'10'</span
+	><span class="Normal NormalText"
+	>:</span
+	><span class="Char ExternalVariable"
+	>:integer</span
+	><span class="Normal NormalText"
+	>;</span
+	><br
+	 /></code
+      ></pre
+    ></div
+  ><div id="ruby-1"
+  ><h3
+    ><a href="#TOC"
+      >Ruby</a
+      ></h3
+    ><pre class="sourceCode ruby"
+    ><code
+      ><span class="Normal NormalText"
+	>int </span
+	><span class="Char Operator"
+	>=</span
+	><span class="Normal NormalText"
+	> </span
+	><span class="String RawString"
+	>'10'</span
+	><span class="Normal Message"
+	>.to_i</span
+	><br
+	 /></code
+      ></pre
+    ></div
+  ><div id="php-1"
+  ><h3
+    ><a href="#TOC"
+      >PHP</a
+      ></h3
+    ><pre class="sourceCode php"
+    ><code
+      ><span class="Normal NormalText"
+	>$int = (int)'10';</span
+	><br
+	 /></code
+      ></pre
+    ></div
+  ></div
+>
+</body>
+</html>
+
