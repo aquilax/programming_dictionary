@@ -43,3 +43,38 @@ int = '10'.to_i
 ~~~{.php}
 $int = (int)'10';
 ~~~
+
+## Print string
+
+### PHP
+~~~{.php}
+echo 'string';
+//or
+print 'string';
+//or
+printf('%s', 'string');
+~~~
+
+### Ruby
+
+~~~{.ruby}
+puts 'string'
+~~~
+
+### SQL
+
+~~~{.sql}
+SELECT 'string';
+~~~
+
+### Go
+~~~{.go}
+
+import fmt
+
+.
+.
+
+fmt.Print('string')
+
+~~~
